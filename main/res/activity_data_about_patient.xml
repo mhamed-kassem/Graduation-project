@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:layoutDirection="ltr"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/Tembreture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tempreture"
+                android:padding="10dp"
+                android:textSize="40sp"
+
+                app:layout_constraintBottom_toTopOf="@id/HeartRate" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/HeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Heart Rate"
+                android:textSize="40sp"
+                android:inputType="number"
+                android:padding="10dp"
+                app:layout_goneMarginTop="50dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/Lowpressure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:hint="Low pressure"
+                android:textSize="40sp"
+                android:padding="10dp"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/Highpressure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:hint="High Pressure"
+                android:textSize="40sp"
+                android:inputType="number"
+                android:padding="10dp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text="Save"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="100dp"
+            />
+    </LinearLayout>
+</ScrollView>

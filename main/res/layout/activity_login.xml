@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:layoutDirection="ltr"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_gravity="center"
+        android:paddingTop="56dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/doctor"
+            android:background="@drawable/image_background_2"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textStyle="bold"
+                android:fontFamily="@font/coconnextarabic_light"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_color"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/user_email"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Password"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:fontFamily="@font/coconnextarabic_light"
+                android:textColor="@color/text_color"
+                android:drawableLeft="@drawable/pad_lock"
+                android:drawablePadding="10dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:id="@+id/rest_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/coconnextarabic_bold"
+            android:onClick="clickToReast"
+            android:text="Forget Password ?"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/coconnextarabic_light"
+            android:text="Login"
+            />
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/coconnextarabic_light"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:background="@color/text_color"
+            android:textSize="16dip"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
