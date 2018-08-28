@@ -26,13 +26,13 @@ _techniques
 .webservice
 .firebase
 .internet of things
-.arduino
+.arduino 
 
 
 
-------------
+------------ 
 _main folder contain android code 
-_diabetes model, heart model contain machine learning code
+_diabetes model, heart model contain machine learning code 
 _Gp-Presentation file show our project 
 
 mohamed kassem fayed
