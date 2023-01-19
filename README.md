@@ -1,5 +1,5 @@
 # Graduation-project
-Diseases detection based on internet of things 
+Diseases detection based on machine learning using internet of things 
 the project contain two main parts hardware(arduino) and software(android App, machine learning on web service)
 
 _Hardware:
